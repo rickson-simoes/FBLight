@@ -4,13 +4,13 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -22,9 +22,10 @@ module.exports = {
     'react',
   ],
   rules: {
-    "class-methods-use-this" : "off",
-    "no-param-reassign" : "off",
-    "camelcase" : "off",
-    "no-unused-vars" : ["error",{"argsIgnorePattern": "next"}],
+    'react/jsx-filename-extension' : [
+      'warn',
+      {extensions: ['.jsx', 'js']}
+    ],
+    'import/prefer-default-export': 'off',
   },
 };
