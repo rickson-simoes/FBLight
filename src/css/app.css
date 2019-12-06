@@ -1,0 +1,39 @@
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+  background-color: #fcf3f3;
+}
+
+.mainNavbar {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(159, 182, 222);
+  font-weight: 200;
+  box-shadow: -7px -3px 10px 1px black;
+}
+
+.mainHeader {
+  font-size: 22px;
+  padding: 11px 11px 11px 11px;
+}
+
+#mainHeaderLogo {
+  float: left;
+  width: 50px;
+  height: auto;
+}
+
+.mainHeaderTitle {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.mainHeaderProfile {
+  float: right;
+  margin-right: 10px;
+}
+
+.mainHeaderElements {
+ display: inline;
+ margin-right: 10px;
+}

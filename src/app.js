@@ -1,9 +1,14 @@
 import React from 'react';
+import './css/app.css';
 
-import './app.css';
+import Header from './components/header';
 
 function app() {
-  return <h1>retornando componente</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default app;
