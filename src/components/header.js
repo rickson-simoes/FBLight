@@ -10,7 +10,7 @@ function Header() {
         <img id="mainHeaderLogo" alt={iconNet} src={iconNet} />
 
         <div className="mainHeaderTitle">
-          Talkabout
+          Facebook Lite
         </div>
 
         <div className="mainHeaderProfile">
