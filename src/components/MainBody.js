@@ -1,44 +1,61 @@
 import React from 'react';
-import picBoy1 from '../images/boy1.jpg';
-import picGirl1 from '../images/girl1.png';
-import picBoy2 from '../images/boy2.jpg';
-import picGirl2 from '../images/girl2.jpg';
 
-function MainBody() {
+function BodyHeader({author, date}){
   return (
     <>
-    <div className="mainBody">
+      { author.map(img => (          
+        <div key={img.avatar} className="mainBodyHeader">
+            
+          <div className="mainBodyIMG">   
+          <img width="40" height="auto" alt={img.avatar} src={img.avatar} />
+          </div>
 
-      <div className="mainBodyHeader">
-        <div className="mainBodyIMG">     
-         <img width="40" height="auto" alt={picBoy1} src={picBoy1} />
+          <div className="mainBodyHeaderProps">
+            <div className="mainBodyPropsName">{img.name}</div>
+            <div className="mainBodyPropsHour">{date}</div>
+          </div>
+
         </div>
-
-        <div className="mainBodyHeaderProps">
-          <div className="mainBodyPropsName">Rickson Simoes</div>
-          <div className="mainBodyPropsHour">04 jun 2019</div>
-        </div>
-      </div>
-
-      <div className="mainBodyQuestion">
-          E ae gente sabe alguem odfjkg sdf-opkg opsdfg kjopdfs gkdfsopg ksdfg dfs?
-      </div>  
-
-      <div className="mainBodyHeader">
-        <div className="mainBodyIMG">     
-         <img width="40" height="auto" alt={picGirl1} src={picGirl1} />
-        </div>
-
-        <div className="mainBodyHeaderProps">
-          <div className="mainBodyPropsName">Rickson Simoes : </div>
-          <div className="mainBodyPropsAnswer">
-            cara você pode OPFSAKDF OPASDK FPOASDKF POADSKFOPDASG SDFGSD FGFSDA GAF ASDPIFO JASDKIOPF SADKPOF ASDPOFK POASDKFOPASDKFOPASDKFOPASDFK OASDKFOPASDKPOFDASK OFASDKF OPASDKFOPASDKF OPASDKF AOSPDKFSD OAPDF SADKPOF ASDPOFK POASDKFOPASDKFOPASDKFOPASDFK OASDKFOPASDKPOFDASK OFASDKF OPASDKFOPASDKF OPASDKF AOSPDKFSD OAPDF SADKPOF ASDPOFK POASDKFOPASDKFOPASDKFOPASDFK OASDKFOPASDKPOFDASK OFASDKF OPASDKFOPASDKF OPASDKF AOSPDKFSD OAPD
-          </div>          
-        </div>
-      </div>
-    </div>
+        ))     
+      } 
     </>
-  );
+  )
+}
+
+function BodyComments({content, comments}) {
+  return (   
+    <>
+    <div className="mainBodyQuestion">
+        {content}
+    </div>  
+
+    { comments.map(comment => (
+    <div key={comment.id} className="mainBodyHeader">
+      <div className="mainBodyIMG">     
+        <img width="40" height="auto" alt={comment.author.avatar} src={comment.author.avatar} />
+      </div>
+
+      <div className="mainBodyHeaderProps">   
+        <div className="mainBodyPropsAnswer">
+          <div className="mainBodyPropsName"> {comment.author.name} </div>
+          {comment.content}
+        </div> 
+      </div>
+
+    </div>  
+      ))                   
+    }
+    </>
+  )
+}
+
+function MainBody({author, date, content, comments}) {
+  return (    
+    <>
+      <BodyHeader author={author} date={date} />
+      <BodyComments content={content} comments={comments} />
+    </>    
+  )
 }
 
 export default MainBody;

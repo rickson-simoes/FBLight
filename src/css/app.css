@@ -11,7 +11,7 @@ body {
   height: 50px;
   width: 100%;
   background-color: rgb(94, 147, 243);
-  font-weight: 200;
+  font-weight: 300;
   box-shadow: -7px -3px 10px 1px black;
 }
 
@@ -42,24 +42,18 @@ body {
 }
 
 /* ------ Main Body ------ */
-
 .mainBody {
   margin: 70px auto 40px auto;
   max-width: 850px;
-  min-height: 400px;
+  min-height: 250px;
   background-color:#ffffff;
-  box-shadow: -1px 2px 8px 0px grey;
+  box-shadow: -3px 2px 12px -5px grey;
   padding: 20px;
 }
 
 /* ------ Question ------ */
 .mainBodyHeader {
   display: inline-flex;
-}
-
-img {
-  border-radius: 30%;
-  box-shadow: -1px 1px 0px 0px #b3b5b7;
 }
 
 .mainBodyIMG {
@@ -88,7 +82,7 @@ img {
   min-height: 50px;
   width: auto;
   padding-bottom: 15px;
-  border-bottom: 1px solid rgb(184, 178, 178);
+  border-bottom: 1px solid rgb(218, 218, 218);
   margin-bottom: 30px;
 }
 
@@ -101,9 +95,23 @@ img {
 .mainBodyPropsAnswer {
   margin-top: 5px;
   margin-bottom: 10px;
+  min-width: 700px;
+  word-break: break-all;
   font-weight: 400;
   font-size: 14px;
   background-color: rgb(240, 240, 240);
   border-radius: 10px 20px 20px 10px;
+  padding: 10px;
+}
+
+
+/*TESTE*/
+
+.teste {
+  background-color: burlywood;
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 80px;
   padding: 10px;
 }
