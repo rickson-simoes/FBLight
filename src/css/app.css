@@ -56,6 +56,10 @@ body {
   display: inline-flex;
 }
 
+.imgPostRound {
+  border-radius: 40%;
+}
+
 .mainBodyIMG {
   float: left;
   margin-right: 15px;
@@ -101,17 +105,5 @@ body {
   font-size: 14px;
   background-color: rgb(240, 240, 240);
   border-radius: 10px 20px 20px 10px;
-  padding: 10px;
-}
-
-
-/*TESTE*/
-
-.teste {
-  background-color: burlywood;
-  width: 50%;
-  margin: 0 auto;
-  height: auto;
-  margin-top: 80px;
   padding: 10px;
 }

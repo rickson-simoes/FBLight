@@ -5,9 +5,9 @@ function BodyHeader({author, date}){
     <>
       { author.map(img => (          
         <div key={img.avatar} className="mainBodyHeader">
-            
+
           <div className="mainBodyIMG">   
-          <img width="40" height="auto" alt={img.avatar} src={img.avatar} />
+          <img class="imgPostRound" width="40" height="auto" alt={img.avatar} src={img.avatar} />
           </div>
 
           <div className="mainBodyHeaderProps">
@@ -32,7 +32,7 @@ function BodyComments({content, comments}) {
     { comments.map(comment => (
     <div key={comment.id} className="mainBodyHeader">
       <div className="mainBodyIMG">     
-        <img width="40" height="auto" alt={comment.author.avatar} src={comment.author.avatar} />
+        <img class="imgPostRound" width="40" height="auto" alt={comment.author.avatar} src={comment.author.avatar} />
       </div>
 
       <div className="mainBodyHeaderProps">   

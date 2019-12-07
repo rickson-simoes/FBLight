@@ -5,6 +5,7 @@ import picBoy1 from '../images/boy1.jpg';
 import picGirl1 from '../images/girl1.png';
 import picBoy2 from '../images/boy2.jpg';
 import picGirl2 from '../images/girl2.jpg';
+import picBoy3 from '../images/boy3.png';
 
 class PostList extends Component{  
 
@@ -43,11 +44,19 @@ class PostList extends Component{
           {
             id: 2,
             author: {
-              name: "Storm Girl",
+              name: "Sweet Tempest",
               avatar: picGirl2
             },
             content: "Eu!! Pode me adicionar!"
-          }
+          },
+          {
+            id: 3,
+            author: {
+              name: "Endeavor",
+              avatar: picBoy3
+            },
+            content: "Gostaria de participar também!"
+          },
         ]
       }
     ]
