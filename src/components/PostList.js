@@ -18,7 +18,7 @@ class PostList extends Component{
             name: "Young Padawan",
             avatar: picBoy1
           }],
-        date: "04 Jun 2019",
+        date: "29 Dez 2019",
         content: "Olá, sou novo aqui!",
         comments: [
           {
@@ -38,7 +38,7 @@ class PostList extends Component{
             name: "Knight Fury",
             avatar: picBoy2
           }],
-        date: "04 Jun 2019",
+        date: "16 Dez 2019",
         content: "Olá, alguém com algum grupo para estudar?",
         comments: [
           {

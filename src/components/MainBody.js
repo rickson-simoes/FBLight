@@ -24,9 +24,9 @@ function BodyHeader({author, date}){
 
 function BodyComments({content, comments}) {
   return (   
-    <>
+    <> <br/>
     <div className="mainBodyQuestion">
-        {content}
+      {content}
     </div>  
 
     { comments.map(comment => (
